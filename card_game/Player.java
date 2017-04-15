@@ -28,6 +28,9 @@ public class Player {
   }
 
   public int sumHand() {
+    if((this.hand[0].getNumber() + this.hand[1].getNumber()) > 21) {
+      return 0;
+    }
     return this.hand[0].getNumber() + this.hand[1].getNumber();
   }
 

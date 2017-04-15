@@ -5,6 +5,8 @@ import java.util.*;
 
 public class WinChecker {
 
+  private ArrayList<Player> players = new ArrayList<Player>();
+
   public String twoPlayerWinner(Player hand1, Player hand2) {
     if(hand1.sumHand() > hand2.sumHand() ) {
       return hand1.getName() ;
@@ -12,15 +14,18 @@ public class WinChecker {
       return hand2.getName() ;
   }
 
-//   public String multiplayerWinner(ArrayList<players>)
-//   listOfScores = []
-//   for(player : players) {
-//     listOfScores += player.sumHand
-//   }
-//   listOfScores.sort
-//   return listOfScores[0]
-//   // this returns the high score, but now we have to find the player who got this score
-//   find person who got the score
+
+
+  // public int multiplayerWinner(players) {
+  // Array listOfScores = [];
+  // for(Player player : players) {
+  //   listOfScores += player.sumHand() ;
+  // }
+  // listOfScores.sort;
+  // return listOfScores[0];
+  // }
+  // this returns the high score, but now we have to find the player who got this score
+  // find person who got the score
 
 
 }
