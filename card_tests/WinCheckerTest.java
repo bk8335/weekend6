@@ -9,6 +9,7 @@ public class WinCheckerTest {
   WinChecker winChecker;
   Player player1;
   Player player2;
+  Player player3;
   Card card1;
   Card card2;
   Card card3;
@@ -19,6 +20,7 @@ public class WinCheckerTest {
     winChecker = new WinChecker();
     player1 = new Player("Ben");
     player2 = new Player("dave");
+    player3 = new Player("Max");
     card1 = new Card(10, Suit.Spades);
     card2 = new Card(9, Suit.Spades);
     card3 = new Card(5, Suit.Spades);
@@ -30,7 +32,12 @@ public class WinCheckerTest {
 
   @Test
   public void checkWinner() {
-    assertEquals("player2", winChecker.winner(player1, player2));
+    assertEquals("dave", winChecker.twoPlayerWinner(player1, player2));
   }
+
+  // @Test
+  // public void checkMultiPlayerWinner() {
+  //   assertEquals(player3.name, )
+  // }
 
 }
