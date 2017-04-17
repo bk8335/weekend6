@@ -17,12 +17,12 @@ public class WinChecker {
 
 
   // public int multiplayerWinner(players) {
-  // Array listOfScores = [];
+  // listOfScores = new ArrayList();
   // for(Player player : players) {
   //   listOfScores += player.sumHand() ;
   // }
-  // listOfScores.sort;
-  // return listOfScores[0];
+  // listOfScores.sort();
+  // return listOfScores.get(0);
   // }
   // this returns the high score, but now we have to find the player who got this score
   // find person who got the score
